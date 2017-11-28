@@ -4,7 +4,7 @@
     <h1>{{ msg }}</h1>
     <ul>
       <li><a href="/#/snake" target="_blank">贪吃蛇</a></li>
-      <li><a href="/#/star" target="_blank">星光闪闪</a></li>
+      <li><a href="/#/star" target="_blank">星空闪耀</a></li>
     </ul>
   </div>
 </template>
@@ -34,7 +34,7 @@ li {
   margin: 0 20px;
 }
 a {
-  color: #000;
+  color:aqua;
   text-decoration: none;
   font-size: 24px;
 }

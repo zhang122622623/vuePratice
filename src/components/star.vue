@@ -9,7 +9,7 @@
     data () {
       return {
         msg: 'Welcome to Your Vue.js App',
-        stars:'',
+        stars:'',timer:'',
         Obj:{},
       }
     },
@@ -52,6 +52,9 @@
            }
           },100);
        }
+    },
+    beforeDestroy(){
+      clearInterval(this.timer);
     },
     mounted() {
       this.stars = document.getElementById('stars');

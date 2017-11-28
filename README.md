@@ -5,6 +5,7 @@
 1、运行以下命令构建项目:
 
   npm install
+
   npm run dev
 
 2、登陆 localhost:8080 查看内部Demo；

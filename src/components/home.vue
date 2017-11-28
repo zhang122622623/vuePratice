@@ -2,16 +2,9 @@
   <div class="hello">
     <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
     <ul>
       <li><a href="/#/snake" target="_blank">贪吃蛇</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+      <li><a href="/#/star" target="_blank">星光闪闪</a></li>
     </ul>
   </div>
 </template>
@@ -38,9 +31,14 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 a {
-  color: #42b983;
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+}
+a:hover{
+  color:orange;
 }
 </style>

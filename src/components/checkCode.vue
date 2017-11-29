@@ -5,6 +5,7 @@
       <span @click="init">{{code}}</span>
       <button @click="checkCode">{{check}}</button>
       <p v-show="isWrong2">验证码错误</p>
+      <p v-show="isWrong3">请输入验证码</p>
     </div>
   </div>
 </template>
@@ -13,7 +14,7 @@
   export default {
     data () {
       return {
-        check:'验证', Input:'',code:[],isWrong:false,isWrong2:false,
+        check:'验证', Input:'',code:[],isWrong:false,isWrong2:false,isWrong3:false,
         random:[0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z'],
       }
     },
@@ -38,13 +39,20 @@
       checkCode(){
         if(this.Input===this.code){
           this.isWrong2 = false;
+          this.isWrong3 = false;
           alert('验证通过！');
+          this.Input='';
           this.init();
+        }else if(!this.Input){
+          this.isWrong3 = true;
+          this.isWrong2 = false;
+          this.isWrong = true;
         }else{
           this.isWrong2 = true;
+          this.isWrong3 = false;
+          this.isWrong = true;
         }
       },
-
     },
     mounted() {
         this.init();
@@ -110,6 +118,7 @@
     color: #fff;
     cursor: pointer;
     font-size: 18px;
+    outline: none;
   }
   p{
     clear: both;

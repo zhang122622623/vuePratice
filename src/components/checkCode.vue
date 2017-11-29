@@ -85,7 +85,7 @@
     margin-top: 1px;
     display: block;
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   input:focus{
     border: 1px solid blue;
@@ -124,5 +124,6 @@
     clear: both;
     font-size: 18px;
     color: #f00;
+    margin-left: -280px;
   }
 </style>

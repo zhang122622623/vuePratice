@@ -133,7 +133,10 @@
   }
   #map{
     position:absolute;
-    left:0;right:0; top:100px; bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
     margin:auto;
     border:1px solid #000;
     font-size: 0;

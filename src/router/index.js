@@ -4,6 +4,7 @@ import HelloWorld from '../components/home.vue'
 import Snake from '../components/snake.vue'
 import Star from '../components/star.vue'
 import checkCode from '../components/checkCode.vue'
+import Gauge from'../components/gauge.vue'
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
     {
       path: '/checkCode',
       component: checkCode
+    },
+    {
+      path: '/gauge',
+      component: Gauge
     },
   ]
 })

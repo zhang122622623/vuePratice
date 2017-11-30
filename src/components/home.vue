@@ -6,6 +6,7 @@
       <li><a href="/#/snake" target="_blank">贪吃蛇</a></li>
       <li><a href="/#/star" target="_blank">星空闪耀</a></li>
       <li><a href="/#/checkCode" target="_blank">随机验证码</a></li>
+      <li><a href="/#/gauge" target="_blank">仪表盘</a></li>
     </ul>
   </div>
 </template>

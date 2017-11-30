@@ -9,7 +9,7 @@
 export default{
   data(){
     return{
-      myChart:null,option:{},
+      myChart:null,option:{},timer:'',
       textStyle:{
         fontWeight: 'bolder',
         color: '#fff',
@@ -85,14 +85,15 @@ export default{
                 }
               },
               detail : {
-               // backgroundColor: 'rgba(30,144,255,0.8)',
+                backgroundColor: 'rgba(30,144,255,0.8)',
                 borderWidth: 1,
                 borderColor: '#fff',
                 shadowColor : '#fff', //默认透明
                 shadowBlur: 5,
                 offsetCenter: [0, '40%'],       // x, y，单位px
                 textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
-                  color: '#fff'
+                  color: '#fff',
+                  fontSize:22,
                 }
               },
               data:[{value: 50, name: 'km/h'}]
@@ -131,7 +132,7 @@ export default{
               title : {
                 textStyle: {
                   fontWeight: 'bolder',
-                  fontSize: 18,
+                  fontSize: 16,
                   fontStyle: 'italic',
                   color: '#fff',
                   shadowColor : '#fff',
@@ -245,12 +246,16 @@ export default{
       this.myChart.setOption(this.option);
     }
   },
+  beforeDestroy(){
+    clearInterval(this.timer);
+  },
   mounted(){
     this.drawChart();
     let that =this;
-    let timer =setInterval(function () {
-      that.option.series[0].data[0].value = (Math.random()*200).toFixed(2);
-      that.option.series[1].data[0].value = (Math.random()*6).toFixed(1);
+     this.timer =setInterval(function () {
+      let data1 = (Math.random()*200).toFixed(2);
+      that.option.series[0].data[0].value = data1;
+      that.option.series[1].data[0].value =(data1*6.4/200).toFixed(1);
       that.option.series[2].data[0].value = (Math.random()*1.8).toFixed(1);
       that.option.series[3].data[0].value = (Math.random()*2).toFixed(1);
       that.myChart.setOption(that.option);

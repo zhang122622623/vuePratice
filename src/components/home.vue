@@ -7,6 +7,7 @@
       <li><a href="/#/star" target="_blank">星空闪耀</a></li>
       <li><a href="/#/checkCode" target="_blank">随机验证码</a></li>
       <li><a href="/#/gauge" target="_blank">仪表盘</a></li>
+      <li><a href="/#/showImage" target="_blank">图片查看</a></li>
     </ul>
   </div>
 </template>

@@ -18,7 +18,7 @@
   export default {
     data(){
       return {
-        black:'',big:'',index:0,img:'',
+        black:'',big:'',index:0,img:'',left:'',right:'',
         src:["../../static/showImage/s1.jpg","../../static/showImage/s2.jpg","../../static/showImage/s3.jpg",
              "../../static/showImage/s4.jpg","../../static/showImage/s5.jpg","../../static/showImage/s6.jpg",
             "../../static/showImage/s7.jpg","../../static/showImage/s8.jpg","../../static/showImage/s9.jpg",]
@@ -28,36 +28,46 @@
       showImage(e){
         this.index = parseInt(e.target.id)+1;
         let src = "../../static/showImage/big"+this.index+".jpg";
-        this.black = document.getElementById("black");
-        this.big = document.getElementById("big");
         this.black.style.display = "block";
         this.big.style.display = "block";
         this.big.style.left =  this.big.style.top = "50%";
         this.big.style.marginLeft = - this.big.offsetWidth/2 + "px";
         this.big.style.marginTop = - this.big.offsetHeight/2 + "px";
-        this.img = document.getElementById("img");
         this.img.src = src;
       },
       cancel(){
         this.black.style.display = "none";
         this.big.style.display = "none";
+        this.left.style.cursor = 'pointer';
+        this.right.style.cursor = 'pointer';
       },
       prev(){
+        this.right.style.cursor = 'pointer';
         if(this.index>1){
           this.index--;
           let src = "../../static/showImage/big"+this.index+".jpg";
           this.img.src = src;
         }else{
-
+          this.left.style.cursor = 'auto';
         }
       },
       next(){
+        this.left.style.cursor = 'pointer';
         if(this.index<9){
           this.index++;
           let src = "../../static/showImage/big"+this.index+".jpg";
           this.img.src = src;
+        }else{
+          this.right.style.cursor = 'auto';
         }
       },
+    },
+    mounted(){
+      this.black = document.getElementById("black");
+      this.big = document.getElementById("big");
+      this.img = document.getElementById("img");
+      this.left = document.getElementById("left");
+      this.right = document.getElementById("right");
     }
   }
 </script>

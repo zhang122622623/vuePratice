@@ -63,7 +63,7 @@
 <style scoped>
   .wrapper{
     background: #fff;
-    height: 100%;
+    height:80%;
     width: 100%;
     padding-top: 80px;
   }

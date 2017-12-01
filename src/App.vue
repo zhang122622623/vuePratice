@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <p class="copyRight">Design By xiaofeiZhang @2017</p>
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import myFooter from './components/footer.vue'
+  export default {
+      components:{
+        myFooter
+      }
+  }
 </script>
 
 <style scoped>
@@ -22,11 +25,4 @@ export default {
   width: 100%;
    position: relative;
  }
-  .copyRight{
-    margin: 0 auto;
-    position: absolute;
-    left:40%;
-    bottom:30px;
-    font-size: 16px;
-  }
 </style>

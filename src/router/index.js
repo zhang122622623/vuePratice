@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '../components/home.vue'
+import Home from '../components/home.vue'
 
 //功能页
 import Snake from '../components/snake.vue'
@@ -15,12 +15,10 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      component: Home
     },
     {
       path: '/snake',
-      name: 'snake',
       component: Snake
     },
     {

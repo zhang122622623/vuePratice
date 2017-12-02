@@ -71,14 +71,14 @@
 
 <style scoped>
   .wrapper{
-    width: 50%;
-    margin:0 auto;
     padding-top: 60px;
   }
   .container{
     width: 400px;
+    margin-left: 100px;
     height: 300px;
     position: relative;
+    border: 1px solid #333;
   }
   .container img{
     width: 100%;
@@ -94,10 +94,10 @@
     display: none;
   }
   #bigImage{
-    width: 300px;
+    width: 400px;
     height: 300px;
     position: absolute;
-    left:70%;
+    left:520px;
     top:60px;
     overflow: hidden;
     border: 1px solid #333;

@@ -11,6 +11,7 @@
     </ul>
     <ul>
       <li><a href="/#/boostImage" target="_blank">图片放大镜</a></li>
+      <li><a href="/#/carousel1" target="_blank">百叶窗轮播</a></li>
     </ul>
   </div>
 </template>

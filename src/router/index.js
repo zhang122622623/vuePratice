@@ -9,6 +9,7 @@ import checkCode from '../components/checkCode.vue'
 import Gauge from'../components/gauge.vue'
 import showImage  from'../components/showImage.vue'
 import boostImage from '../components/boostImage.vue'
+import carousel_1 from '../components/carousel_1.vue'
 
 Vue.use(Router)
 
@@ -41,6 +42,10 @@ export default new Router({
     {
       path: '/boostImage',
       component: boostImage
+    },
+    {
+      path: '/carousel1',
+      component: carousel_1
     },
   ]
 })

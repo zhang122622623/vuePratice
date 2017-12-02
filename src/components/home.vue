@@ -7,10 +7,11 @@
       <li><a href="/#/star" target="_blank">星空闪耀</a></li>
       <li><a href="/#/checkCode" target="_blank">随机验证码</a></li>
       <li><a href="/#/gauge" target="_blank">仪表盘</a></li>
-      <li><a href="/#/showImage" target="_blank">图片查看</a></li>
+      <li><a href="/#/showImage" target="_blank">查看大图</a></li>
     </ul>
     <ul>
       <li><a href="/#/boostImage" target="_blank">图片放大镜</a></li>
+      <li><a href="/#/showInfo" target="_blank">图片详情</a></li>
       <li><a href="/#/carousel1" target="_blank">百叶窗轮播</a></li>
     </ul>
   </div>

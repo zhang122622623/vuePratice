@@ -72,7 +72,7 @@
   input#btn2:checked ~ .content div span:nth-child(2),
   input#btn3:checked ~ .content div span:nth-child(3),
   input#btn4:checked ~ .content div span:nth-child(4)
-  { left:0px;  -webkit-transition:left 3s ease;  }
+  { left:0px;  -webkit-transition:left 0.5s ease;  }
 
   label{
     width:30px; height: 30px; background: #333;

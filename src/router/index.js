@@ -8,6 +8,7 @@ import Star from '../components/star.vue'
 import checkCode from '../components/checkCode.vue'
 import Gauge from'../components/gauge.vue'
 import showImage  from'../components/showImage.vue'
+import boostImage from '../components/boostImage.vue'
 
 Vue.use(Router)
 
@@ -36,6 +37,10 @@ export default new Router({
     {
       path: '/showImage',
       component: showImage
+    },
+    {
+      path: '/boostImage',
+      component: boostImage
     },
   ]
 })

@@ -9,6 +9,9 @@
       <li><a href="/#/gauge" target="_blank">仪表盘</a></li>
       <li><a href="/#/showImage" target="_blank">图片查看</a></li>
     </ul>
+    <ul>
+      <li><a href="/#/boostImage" target="_blank">图片放大镜</a></li>
+    </ul>
   </div>
 </template>
 

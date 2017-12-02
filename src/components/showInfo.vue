@@ -51,6 +51,7 @@
     width: 900px;
     margin:0 auto;
   }
+
   .pic{
     width: 250px;
     height: 380px;
@@ -65,6 +66,7 @@
     width: 100%;
     height: 100%;
   }
+
   .pic span{
     display: block;
     width: 100%;

@@ -85,5 +85,6 @@
   input#btn3 + label{ left:800px; }
   input#btn4 + label{ left:850px; }
   input:checked + label{ background: rgba( 220,220,220,0.5 );}
+
   input{ display:none; }
 </style>

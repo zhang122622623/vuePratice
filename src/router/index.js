@@ -11,6 +11,7 @@ import showImage  from'../components/showImage.vue'
 import boostImage from '../components/boostImage.vue'
 import carousel_1 from '../components/carousel_1.vue'
 import showInfo from '../components/showInfo.vue'
+import vueCnode from '../components/elementCom.vue'
 
 Vue.use(Router)
 
@@ -51,6 +52,10 @@ export default new Router({
     {
       path: '/showInfo',
       component: showInfo
+    },
+    {
+      path: '/vueCnode',
+      component: vueCnode
     },
   ]
 })

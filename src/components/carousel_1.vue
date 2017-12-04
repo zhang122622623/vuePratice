@@ -58,8 +58,8 @@
     left: 225px;
   }
 
-  input#btn1:checked~.content div span:nth-child(1){background-image: url("../../static/carousel_1/1.jpg") }
-  input#btn2:checked~.content div span:nth-child(2){ background-image: url("../../static/carousel_1/3.jpg") }
+  input#btn1:checked~.content div span:nth-child(1){background-image: url("../../static/carousel_1/3.jpg") }
+  input#btn2:checked~.content div span:nth-child(2){ background-image: url("../../static/carousel_1/1.jpg") }
   input#btn3:checked~.content div span:nth-child(3){ background-image: url("../../static/carousel_1/4.jpg") }
   input#btn4:checked~.content div span:nth-child(4){ background-image: url("../../static/carousel_1/2.jpg") }
 
@@ -85,6 +85,5 @@
   input#btn3 + label{ left:800px; }
   input#btn4 + label{ left:850px; }
   input:checked + label{ background: rgba( 220,220,220,0.5 );}
-
   input{ display:none; }
 </style>

@@ -54,9 +54,12 @@
           </el-menu>
         </el-col>
       </el-row>
+      <div class="block">
+        <el-color-picker v-model="color1"></el-color-picker>
+      </div>
       <el-table
         :data="tableData"
-        style="width: 50%; text-align: center">
+        style="width: 45%; text-align: center">
         <el-table-column prop="date" label="日期">
         </el-table-column>
         <el-table-column
@@ -77,7 +80,7 @@
   export default {
     data() {
       return {
-        activeIndex: '1',
+        activeIndex: '1',  color1: '#409EFF',
         tableData: [{
           date: '2016-05-02',
           name: '王小虎',

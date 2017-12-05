@@ -4,73 +4,27 @@
       <img src="../assets/cnodejs.svg"  title="cnodejs.svg">
       <ul>
         <li>首页</li>
-        <li>关于</li>
+        <li @click="open">关于</li>
       </ul>
     </div>
-      <el-row class="tac">
-        <el-col :span="4">
-          <el-menu
-            default-active="2"
-            class="el-menu-vertical-demo"
-            @open="handleOpen"
-            @close="handleClose"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b">
-            <el-submenu index="1">
-              <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
-              </template>
-              <el-menu-item-group>
-                <template slot="title">分组一</template>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-              </el-menu-item-group>
-              <el-menu-item-group title="分组2">
-                <el-menu-item index="1-3">选项3</el-menu-item>
-              </el-menu-item-group>
-              <el-submenu index="1-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="1-4-1">选项1</el-menu-item>
-              </el-submenu>
-            </el-submenu>
-            <el-menu-item index="2">
-              <i class="el-icon-menu"></i>
-              <span slot="title">导航二</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-setting"></i>
-              <span slot="title">导航三</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <i class="el-icon-setting"></i>
-              <span slot="title">导航四</span>
-            </el-menu-item>
-            <el-menu-item index="5">
-              <i class="el-icon-setting"></i>
-              <span slot="title">导航五</span>
-            </el-menu-item>
-          </el-menu>
-        </el-col>
-      </el-row>
-      <div class="block">
-        <el-color-picker v-model="color1"></el-color-picker>
+
+    <el-dialog title="收货地址" :visible.sync="dialogVisible">
+      <el-form :model="form">
+        <el-form-item label="活动名称" :label-width="formLabelWidth">
+          <el-input v-model="form.name" auto-complete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="活动区域" :label-width="formLabelWidth">
+          <el-select v-model="form.region" placeholder="请选择活动区域">
+            <el-option label="区域一" value="shanghai"></el-option>
+            <el-option label="区域二" value="beijing"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button @click="cancel">取 消</el-button>
+        <el-button type="primary" @click="cancel">确 定</el-button>
       </div>
-      <el-table
-        :data="tableData"
-        style="width: 45%; text-align: center">
-        <el-table-column prop="date" label="日期">
-        </el-table-column>
-        <el-table-column
-          prop="name"
-          label="姓名">
-        </el-table-column>
-        <el-table-column
-          prop="address"
-          label="地址">
-        </el-table-column>
-      </el-table>
+    </el-dialog>
   </div>
 </template>
 
@@ -79,36 +33,27 @@
   export default {
     data() {
       return {
-        activeIndex: '1',  color1: '#409EFF',
-        tableData: [{
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1517 弄'
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1519 弄'
-        }, {
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1516 弄'
-        }]
+        dialogVisible: false,
+        form: {
+          name: '',
+          region: '',
+          date1: '',
+          date2: '',
+          delivery: false,
+          type: [],
+          resource: '',
+          desc: ''
+        },
+        formLabelWidth: '120px'
       };
     },
     methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+      open(){
+        this.dialogVisible =true;
       },
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
+      cancel(){
+        this.dialogVisible =false;
       },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      }
     }
   }
 </script>
@@ -148,11 +93,5 @@
     margin:10px 20px 0;
     cursor: pointer;
   }
-  .el-table .warning-row {
-    background: oldlace;
-  }
 
-  .el-table .success-row {
-    background: #f0f9eb;
-  }
 </style>

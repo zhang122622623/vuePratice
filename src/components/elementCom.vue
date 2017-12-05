@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
     <div class="header">
-      <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal"
-        @select="handleSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
-        <el-menu-item index="1">首页</el-menu-item>
-        <el-menu-item index="2">处理中心</el-menu-item>
-        <el-menu-item index="3">关于</el-menu-item>
-      </el-menu>
+      <img src="../assets/cnodejs.svg"  title="cnodejs.svg">
+      <ul>
+        <li>首页</li>
+        <li>关于</li>
+      </ul>
+    </div>
       <el-row class="tac">
         <el-col :span="4">
           <el-menu
@@ -71,7 +71,6 @@
           label="地址">
         </el-table-column>
       </el-table>
-    </div>
   </div>
 </template>
 
@@ -117,9 +116,37 @@
 
 
 <style scoped>
-  .header{
-    height: 60px;
+  .wrapper{
+    height: 100%;
     width: 100%;
+    margin-top: -20px;
+  }
+  .header{
+    height: 80px;
+    width: 100%;
+    background: #545c64;
+    margin-bottom: 40px;
+  }
+  .header img{
+    height: 80px;
+    width: 100px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5px;
+  }
+  .header ul{
+    height: 80px;
+    line-height: 80px;
+    float: right;
+    margin:0 10% 0 0 ;
+  }
+  .header li{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin:10px 20px 0;
+    cursor: pointer;
   }
   .el-table .warning-row {
     background: oldlace;

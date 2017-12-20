@@ -13,7 +13,7 @@
       <li><a href="/#/boostImage" target="_blank">图片放大镜</a></li>
       <li><a href="/#/showInfo" target="_blank">图片详情</a></li>
       <li><a href="/#/carousel1" target="_blank">百叶窗轮播</a></li>
-      <li><a href="/#/vueCnode" target="_blank">elementUI结构</a></li>
+      <li><a href="/#/vueCnode" target="_blank">公交线路图</a></li>
     </ul>
   </div>
 </template>

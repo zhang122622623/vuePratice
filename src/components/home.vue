@@ -16,6 +16,9 @@
       <li><a href="/#/vueCnode" target="_blank">股票K线图</a></li>
       <li><a href="/#/random" target="_blank">随机数</a></li>
     </ul>
+    <ul>
+      <li><a href="/#/editor" target="_blank">markDown编辑器</a></li>
+    </ul>
   </div>
 </template>
 

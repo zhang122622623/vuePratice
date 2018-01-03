@@ -13,6 +13,7 @@ import carousel_1 from '../components/carousel_1.vue'
 import showInfo from '../components/showInfo.vue'
 import vueCnode from '../components/elementCom.vue'
 import Random from '../components/random.vue'
+import Editor from '../components/markDownEditor.vue'
 
 Vue.use(Router)
 
@@ -61,6 +62,10 @@ export default new Router({
     {
       path: '/random',
       component: Random
+    },
+    {
+      path: '/editor',
+      component: Editor
     },
   ]
 })

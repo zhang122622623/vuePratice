@@ -18,6 +18,7 @@
     </ul>
     <ul>
       <li><a href="/#/editor" target="_blank">markDown编辑器</a></li>
+      <li><a href="/#/heatMap" target="_blank">热力图</a></li>
     </ul>
   </div>
 </template>

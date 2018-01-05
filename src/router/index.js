@@ -14,6 +14,7 @@ import showInfo from '../components/showInfo.vue'
 import vueCnode from '../components/elementCom.vue'
 import Random from '../components/random.vue'
 import Editor from '../components/markDownEditor.vue'
+import heatMap from '../components/heatMap.vue'
 
 Vue.use(Router)
 
@@ -66,6 +67,10 @@ export default new Router({
     {
       path: '/editor',
       component: Editor
+    },
+    {
+      path: '/heatMap',
+      component: heatMap
     },
   ]
 })

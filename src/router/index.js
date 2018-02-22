@@ -15,6 +15,7 @@ import vueCnode from '../components/elementCom.vue'
 import Random from '../components/random.vue'
 import Editor from '../components/markDownEditor.vue'
 import heatMap from '../components/heatMap.vue'
+import weiboMap from '../components/weiboMap.vue'
 
 Vue.use(Router)
 
@@ -71,6 +72,10 @@ export default new Router({
     {
       path: '/heatMap',
       component: heatMap
+    },
+    {
+      path: '/weiboMap',
+      component: weiboMap
     },
   ]
 })

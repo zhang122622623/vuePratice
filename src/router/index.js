@@ -16,6 +16,7 @@ import Random from '../components/random.vue'
 import Editor from '../components/markDownEditor.vue'
 import heatMap from '../components/heatMap.vue'
 import weiboMap from '../components/weiboMap.vue'
+import largeScatter from '../components/largeScatter.vue'
 
 Vue.use(Router)
 
@@ -76,6 +77,10 @@ export default new Router({
     {
       path: '/weiboMap',
       component: weiboMap
+    },
+    {
+      path: '/largeScatter',
+      component: largeScatter
     },
   ]
 })

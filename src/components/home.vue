@@ -20,6 +20,7 @@
       <li><a href="/#/editor" target="_blank">markDown编辑器</a></li>
       <li><a href="/#/heatMap" target="_blank">热力图</a></li>
       <li><a href="/#/weiboMap" target="_blank">多轴散点图</a></li>
+      <li><a href="/#/largeScatter" target="_blank">Github提交统计</a></li>
     </ul>
   </div>
 </template>

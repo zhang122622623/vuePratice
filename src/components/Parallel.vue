@@ -10,11 +10,6 @@
     data(){
       return {
         chart:null,
-        itemStyle:{
-          normal:{
-            color:'#0f0',
-          }
-        },
       }
     },
     methods:{

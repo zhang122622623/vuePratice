@@ -22,6 +22,7 @@ import parallel from '../components/parallel.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode:"history",
   routes: [
     {
       path: '/',

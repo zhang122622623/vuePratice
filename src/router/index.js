@@ -17,6 +17,7 @@ import Editor from '../components/markDownEditor.vue'
 import heatMap from '../components/heatMap.vue'
 import weiboMap from '../components/weiboMap.vue'
 import largeScatter from '../components/largeScatter.vue'
+import parallel from '../components/parallel.vue'
 
 Vue.use(Router)
 
@@ -81,6 +82,10 @@ export default new Router({
     {
       path: '/largeScatter',
       component: largeScatter
+    },
+    {
+      path: '/parallel',
+      component: parallel
     },
   ]
 })

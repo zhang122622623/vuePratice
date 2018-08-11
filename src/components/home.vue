@@ -2,6 +2,7 @@
   <div class="hello">
     <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
+    <h2 style="color:#41bfbf;margin-bottom: 40px">一些有趣的图 - 基于Echarts</h2>
     <ul>
       <li><a href="/#/snake" target="_blank">贪吃蛇</a></li>
       <li><a href="/#/star" target="_blank">星空闪耀</a></li>
@@ -21,6 +22,7 @@
       <li><a href="/#/heatMap" target="_blank">热力图</a></li>
       <li><a href="/#/weiboMap" target="_blank">多轴散点图</a></li>
       <li><a href="/#/largeScatter" target="_blank">Github提交统计</a></li>
+      <li><a href="/#/parallel" target="_blank">多行平行线</a></li>
     </ul>
   </div>
 </template>
@@ -48,7 +50,7 @@ li {
   margin: 0 20px;
 }
 a {
-  color:aqua;
+  color:#41bfbf;
   text-decoration: none;
   font-size: 24px;
 }

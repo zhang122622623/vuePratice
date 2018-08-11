@@ -26,6 +26,10 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect:'/index'
+    },
+    {
+      path: '/index',
       component: Home
     },
     {
